@@ -127,9 +127,9 @@ class Break extends React.Component {
       <div class={this.props.running ? 'running' : ''} id='break'>
         <h2 id='break-label'>Break Length</h2>
         <div className='controls'>
-          <img id='break-decrement' alt='' onClick={this.props.length !== 1 && this.props.decrement} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_black_144x144.png'/>
+          <img id='break-decrement' alt='Decrement break time button' onClick={this.props.length !== 1 && this.props.decrement} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_black_144x144.png'/>
           <div id='break-length'>{this.props.length}</div>
-          <img id='break-increment' alt='' onClick={this.props.length !== 60 && this.props.increment} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_up_black_144x144.png'/>
+          <img id='break-increment' alt='Increment break time button' onClick={this.props.length !== 60 && this.props.increment} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_up_black_144x144.png'/>
         </div>
       </div>
     );
@@ -142,9 +142,9 @@ class Session extends React.Component {
       <div class={this.props.running ? 'running' : ''} id='session'>
         <h2 id='session-label'>Session Length</h2>
         <div className='controls'>
-          <img id='session-decrement' alt='' onClick={this.props.length !== 1 && this.props.decrement} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_black_144x144.png'/>
+          <img id='session-decrement' alt='Decrement session time button' onClick={this.props.length !== 1 && this.props.decrement} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_down_black_144x144.png'/>
           <div id='session-length'>{this.props.length}</div>
-          <img id='session-increment' alt='' onClick={this.props.length !== 60 && this.props.increment} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_up_black_144x144.png'/>
+          <img id='session-increment' alt='Increment session time button' onClick={this.props.length !== 60 && this.props.increment} src='https://www.materialui.co/materialIcons/hardware/keyboard_arrow_up_black_144x144.png'/>
         </div>
       </div>
     );
@@ -168,8 +168,8 @@ class Controls extends React.Component {
   render() {
     return (
       <div className='controls'>
-        <img id='start-stop' alt='' src={this.props.running ? 'https://png.icons8.com/metro/1600/pause.png' : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALhSURBVHhe7Zw9yE5hHIcP+UiJkpJ6FTGRj0lGGVgZSWJklQEjk2QhE6skbBhfUpSiDCQGKVEMBlLyef3Tv55Ojzwf933O/fG76qp3voan93fuc+5GCCGEEEII0RtLcf7fP0UM1uED/I1f8QwuQxGYp2iRB/2ER3EhigCsxnbkQd/gXpyDYgo24rDAbR/jdhQTMmpo9xauRzEm44Y2v+MlXIliRCYJ7X7GU7gYxX+YJrT7Dg/jPBT/IERo9xnuRjGEkKHdWdyGYoAYoc1feAXXooBYod1veBaXY9XEDu36pF+EVdJVaNcm/T6ci1XRdWj3CVY16fsK7d7BKiZ936HNH3gZi570KYR2v+BpLHLSpxTafY9HsKhJn2Jo9znuwSJIObR7D7Of9DmENm3SX0U7SM6SXEK7NunPYXaTPrfQrk36Y5jNpM81tGuTfj8mP+lzD+3apN+ByVJKaNcm/QZMjtJCmz8xuUlfYmjX3iNMZtKXHNr9gL1P+hpCuy+wt0lfU2j3PnY+6WsMbdqkv4ZrsBNqDe3aM/CtGJ3aQ5t3MToK3TRvMToK3TQ3MTq1h36JMxidWkPbY9aT2Nlj1tpC28HBBez84KCW0PZ/s/0W93YUVkPoh9j74W7JoV9hMq8rlBj6I9rTugWYDCWF9ufPdnlAcpQQ2k9UVmGy5B7azgi3YPLkGtpOvXdhNuQW2t7jOITZfZqRS2ibzCcw24+NUg/d22QOTaqhbTLfwGzfHm2TYmi736m4T5xTCp3UZA5NCqF9Mhd9FVyfoX0yL8Hi6SN0FpM5NF2Htsm8Gaujq9DZTebQxA5tk/kgVnebQZtYoW0yH8dq7+doEzq0TebzWP2NM21ChbbJfB2LmcyhCRG6yMkcmmlCFz2ZQzNJaJ/MurlxDMYJXdVkDs0ooX0yd/LWZamswGFxXZvMm1AE4Da2A9tk3okiIPZmz0V8jY/wAFY/mYUQQgghhBBCiDZN8wcOqeaaf7XUmAAAAABJRU5ErkJggg=='} onClick={this.props.toggle}/>
-        <img id='reset' alt='' src='https://static.thenounproject.com/png/579359-200.png' onClick={this.props.reset}/>
+        <img id='start-stop' alt='Start/stop timer button' src={this.props.running ? 'https://png.icons8.com/metro/1600/pause.png' : 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALhSURBVHhe7Zw9yE5hHIcP+UiJkpJ6FTGRj0lGGVgZSWJklQEjk2QhE6skbBhfUpSiDCQGKVEMBlLyef3Tv55Ojzwf933O/fG76qp3voan93fuc+5GCCGEEEII0RtLcf7fP0UM1uED/I1f8QwuQxGYp2iRB/2ER3EhigCsxnbkQd/gXpyDYgo24rDAbR/jdhQTMmpo9xauRzEm44Y2v+MlXIliRCYJ7X7GU7gYxX+YJrT7Dg/jPBT/IERo9xnuRjGEkKHdWdyGYoAYoc1feAXXooBYod1veBaXY9XEDu36pF+EVdJVaNcm/T6ci1XRdWj3CVY16fsK7d7BKiZ936HNH3gZi570KYR2v+BpLHLSpxTafY9HsKhJn2Jo9znuwSJIObR7D7Of9DmENm3SX0U7SM6SXEK7NunPYXaTPrfQrk36Y5jNpM81tGuTfj8mP+lzD+3apN+ByVJKaNcm/QZMjtJCmz8xuUlfYmjX3iNMZtKXHNr9gL1P+hpCuy+wt0lfU2j3PnY+6WsMbdqkv4ZrsBNqDe3aM/CtGJ3aQ5t3MToK3TRvMToK3TQ3MTq1h36JMxidWkPbY9aT2Nlj1tpC28HBBez84KCW0PZ/s/0W93YUVkPoh9j74W7JoV9hMq8rlBj6I9rTugWYDCWF9ufPdnlAcpQQ2k9UVmGy5B7azgi3YPLkGtpOvXdhNuQW2t7jOITZfZqRS2ibzCcw24+NUg/d22QOTaqhbTLfwGzfHm2TYmi736m4T5xTCp3UZA5NCqF9Mhd9FVyfoX0yL8Hi6SN0FpM5NF2Htsm8Gaujq9DZTebQxA5tk/kgVnebQZtYoW0yH8dq7+doEzq0TebzWP2NM21ChbbJfB2LmcyhCRG6yMkcmmlCFz2ZQzNJaJ/MurlxDMYJXdVkDs0ooX0yd/LWZamswGFxXZvMm1AE4Da2A9tk3okiIPZmz0V8jY/wAFY/mYUQQgghhBBCiDZN8wcOqeaaf7XUmAAAAABJRU5ErkJggg=='} onClick={this.props.toggle}/>
+        <img id='reset' alt='Reset timer button' src='https://static.thenounproject.com/png/579359-200.png' onClick={this.props.reset}/>
       </div>
     );
   }
